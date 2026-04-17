@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# scrape artefakty — stažené HTML/CSS/obrázky z customo.eu jako referenční kopie
+_source/
+_scrape/node_modules/

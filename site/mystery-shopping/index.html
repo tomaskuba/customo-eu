@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang = "cs" class = "html no-js">
+<head>
+  
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>MYSTERY SHOPPING</title>
+<script type="text/javascript">var CMS_URL = "";</script>
+<script type="text/javascript">var CMS_ASSETS_URL = "/assets/cs";</script>
+<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="preload" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="preload" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&amp;display=swap" rel="preload" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" crossorigin="anonymous" />
+<link href="https://cdn.solidpixels.com" rel="preconnect" crossorigin="" />
+<script type="text/javascript">var CMS_CONFIG = {"app":{"jquery":null,"nav":[],"events":["SLP:Logger:init","SLP:init","SLP:Menu:init","SLP:Slider:init","SLP:Images:init","SLP:AnimatedNumber:init","SLP:InViewport:init","SLP:Waypoints:init","SLP:CookieBar:init","SLP:Dropdown:init","SLP:Toggler:init","SLP:Stepper:init","SLP:SearchPanel:init","SLP:Entries:Controls:init","SLP:Entries:Filters:init","SLP:ScrollIndicator:init","SLP:Layout:init","SLP:Tabs:init","SLP:Accordion:init","SLP:DomUtils:init"],"breakpoints":{"grid":360,"screenSmall":480,"layout":720,"layout-max":719,"nav":720,"nav-max":719,"screenLarge":993,"image":{"360":360,"720":720,"980":980,"1280":1280,"1920":1920,"2600":2600},"images_allowed":{"30":30,"50":50,"80":80,"100":100,"120":120,"180":180,"240":240,"320":320,"360":360,"500":500,"600":600,"640":640,"720":720,"980":980,"1280":1280,"1920":1920,"2600":2600},"methods_allowed":{"responsive":"responsive"},"screen":{"sm":{"id":"sm","label":"Mobile","value":420,"switchable":true},"md":{"id":"md","label":"Tablet","value":720,"switchable":true},"lg":{"id":"lg","label":"Dektop","switchable":true}}},"defaults":{"Sentry":{"projectId":"4509321930997760","dns":"9f7c9bf60909f2d1c345eae790334461@o428203.ingest.us.sentry.io","key":"9f7c9bf60909f2d1c345eae790334461"},"entriesImagePlaceholder":"none","Accordion":{"elementSelector":".block-accordion","singleOpen":false},"AOS":{"elementSelector":"[data-aos]","initClassName":"aos-init","animatedClassName":"aos-animate","debounceDelay":100,"throttleDelay":100,"offset":70,"once":false,"mirror":false,"lb_load":true},"lazyImages":{"init":false,"lazyClass":"is-lazy","loadingClass":"is-loading","loadedClass":"is-loaded","expand":800,"hFac":1},"inViewport":{"elementSelector":".section-body, .section .row-main, .gallery-item","offset":0,"onlyForward":true},"CoverVideo":{"elementSelector":"[data-cover-video]","aspectRatio":1.7778,"width":"1120","height":"630","audio":false,"autoplay":true,"autoplayOffset":100,"cover":true,"startTime":null,"lb_load":true},"CoverVideoPoster":{"elementSelector":".block-video","videoElement":"[src$=\".mp4\"]","playButton":".embed-container__play","posterElement":".embed-container__poster","lb_load":true},"ClickableElements":{"elementSelector":".is-clickable, .block-tagcloud li, .is-clickable-entries .entry-inner, [data-clickable]","clickableClass":"is-clickable"},"Forms":{"elementSelector":"form.block-form:not(.no-ajax):not(.block-form--checkout), form.form-filter, .form-cart > form","validation":true,"inline":true,"ajax":true,"allowedFormats":{"tel":"^[0-9\\-\\+\\(\\)\\#\\ \\*]{8,15}$"},"lb_load":true},"filters":{"elementSelector":".block-form-filter:not(.no-ajax)","ajax":false,"submitOnChange":false,"submitOnChangeTimeout":350,"submitOnChangeMinLength":0},"attachment":{"elementSelector":"input.field-control[type=\"file\"]","resetButtonClass":"cssicon cssicon--times","filenameLabelClass":"field-filename"},"Slider":{"elementSelector":"[data-slider], [data-slider-with-thumbs]","containerModifierClass":"gallery-slider-","slideClass":"gallery-slider-item","slideActiveClass":"is-active","wrapperClass":"gallery-slider-wrapper","loop":false,"navigationPrevClass":"slider-btn-prev","navigationNextClass":"slider-btn-next","paginationClass":"slider-pager","buttonPrevClass":"cssicon cssicon--chevron cssicon--chevron-left","buttonNextClass":"cssicon cssicon--chevron cssicon--chevron-right","lb_load":true},"Map":{"elementSelector":".map__element","libraries":[],"filters":[],"scrollwheel":false,"mapTypeControl":false,"asyncInViewport":true,"offset":600,"infoboxTemplate":"<div class=\"map-window__content\">${ data.image && data.image !== '' ? `<div class=\"map-window__image\"><div class=\"image image-mask ratio-widescreen\"><img class=\"is-loaded\" src=\"${data.image}\" alt=\"images\"\/><\/div><\/div>` : '' }<div class=\"map-window__body-wrapper\"><div class=\"map-window__body\">${data.title && data.title !== '' ? `<h3 class=\"popup-title\">${data.title}<\/h3>` : ''} ${ data.street || data.zip || data.city ? ` <p class=\"infobox__group infobox__group--address\"><strong class=\"infobox__heading\">${___('Address')}<\/strong> ${[data.street, data.zip, data.city] .filter(Boolean) .map( (value, index) => `${index > 0 ? `<span class=\"infobox__colon\">, <\/span>` : ''} <span class=\"infobox__value u-nowrap\">${value}<\/span>` ) .join('')}<\/p> ` : '' } ${ data.navigation_link ? ` <a class=\"infobox__navigation-link\" href=\"${data.navigation_link}\" target=\"_blank\">\u2192 ${___('Navigate')}<\/a>` : '' } ${ data.email || data.phone || data.www ? `<p class=\"infobox__group infobox__group--contacts\"><strong class=\"infobox__heading\">${___('Contacts')}<\/strong> ${ data.email ? `<a class=\"link--email u-nowrap\" href=\"mailto:${data.email}\">${data.email}<\/a><br>` : '' } ${ data.phone ? `<a class=\"link--phone u-nowrap\" href=\"tel:${data.phone_raw}\">${data.phone}<\/a><br>` : '' } ${ data.www ? `<a class=\"link--url u-nowrap\" target=\"_blank\" href=\"${data.www}\">${data.www_label}<\/a><br>` : '' } <\/p>` : '' } ${data.description ? `<div class=\"infobox__group infobox__group--description\">${data.description}<\/div>` : ''} <\/div>${ data.get_url ? `<div class=\"map-window__action\"><a class=\"map-window__button btn btn-sm btn-default\" href=\"${data.get_url}\"><span class=\"btn__label\">${ data.buttonLabel }<\/span><\/a><\/div>` : '' }<\/div><\/div>","lb_load":true},"Lightbox":{"elementSelector":"html:not(.is-lb) .fancybox, .js-lightbox","fitToView":true,"autosize":true,"openEffect":"none","padding":0,"closeEffect":"none","touchNavigation":true,"loop":true,"autoplayVideos":true,"videosWidth":1600},"Parallax":{"elementSelector":"[data-parallax]","scrollOffset":100,"useOnMobile":true,"useOnTablet":true,"lb_load":true},"navToggle":{"activeClass":"is-menu-open","toggleClass":"open","backdropSelector":".main","closeOnClick":true,"keepScrollPosition":true},"Flatpickr":{"elementSelector":".field-control--date","native":false},"AnimatedNumber":{"elementSelector":".js-animated-number","duration":2000,"decimals":"auto","separator":","},"Tooltip":{"elementSelector":"[data-tooltip]"},"RangeSlider":{"elementSelector":"[data-range]:not(.field-control--date)","lb_load":true},"Captcha":{"elementSelector":"[data-captcha]","lb_load":true},"PhoneCodes":{"elementSelector":"[data-phone-code=\"1\"]","lb_load":true},"Submenu":{"elementSelector":".submenu","navItemSelector":".menu--bar.submenu--dropdown .nav__list--level-0 > .nav__item","submenuSelector":".submenu--level-0","lb_load":true}},"async_js":{"Lightbox":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-lightbox.js"],"Flatpickr":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-flatpickr.js"],"RangeSlider":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-range-slider.js"],"Slider":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-slider.js"],"AnimatedNumber":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-animated-number.js"],"Parallax":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-parallax.js"],"Tooltip":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-tooltip.js"],"AOS":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-aos.js"],"Accordion":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-accordion.js"],"CoverVideo":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-video.js"],"CoverVideoPoster":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-video-poster.js"],"Leaflet":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-leaflet.js"],"ClickableElements":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-clickable-elements.js"],"Captcha":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-captcha.js"],"PhoneCodes":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-phone-codes.js"],"Map":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-map.js"],"MapGoogle":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/api-loader.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/vendor\/marker-clusterer.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map-window.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map-clustericon.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map-marker.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/map-markers-manager.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map-provider.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/google-map-static.js"],"MapSeznam":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/api-loader.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/seznam-map.js"],"MapOpenStreet":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/api-loader.js","https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/leaflet-map.js"],"Submenu":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-submenu.js"],"Forms":["https:\/\/cdn.solidpixels.com\/2.73\/template_core\/js\/processed\/async-form.js"]},"editor":{"legacy":"1"}},"brand":{"name":"solidpixels.","version":"2.73.137","stamp":"273137","company":"solidpixels.","company_url":"https:\/\/www.solidpixels.com","favicon":{"rel":"shortcut icon","href":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEUAAAAEaP8FZ\/8EaP8fc\/8EZ\/8NbP9Wlf8FZ\/8FaP8FZ\/8Eaf8Eaf8Fa\/8Jbf8Kbv8EaP8EZ\/8FaP8EaP8EZ\/8FaP8FaP8Gav8Hav8Ga\/8GaP8EaP8FZ\/8EZ\/8EaP8FaP8FaP8FZ\/8GaP8Eav8EZ\/8\/GNrXAAAAJHRSTlMA+859CLsSA8mhj3hzMx0Y9e\/dwrBsX1JHQC3s0rKsmpiNVjrNqs1SAAAApUlEQVQ4y+2QRw4CMQxFPSlTUple6JD7nxFbwGIk5wTwNpbyn\/ITw58dq2x0Y5+5OOj05hLZvOoxK1oy+ooTFkwaBfGM88EJFgOPMwohLCeMKAwB8mwFvaGWW9ZwaBCdq4DH649Sl5ChnIYDGTfIoyQKLbenuzEjEAINxRg1ni9UgyUdTqraCRP9UktJFxhOgGv6IhQrwHxKxNEpYAXq9\/Ma4Gd5AY50EWePmgBIAAAAAElFTkSuQmCC"}},"gallery":{"view":"grid","order_by":{"column":"cms_created","direction":"DESC"},"auto_description":"0","auto_convert":"0"},"environment":"solidpixels.","language":{"name":"cs","name_full":"\u010cesk\u00fd","prefix":"cs","assets":"cs","i18n":"cs","locale":["cs_CZ.utf-8","cs_CZ.utf8"],"cms_status":1,"id":"1","validation":{"required":"Pole \"{label}\" nesm\u00ed b\u00fdt pr\u00e1zdn\u00e9","email":"Do pole \"{label}\" mus\u00edte zadat e-mailovou adresu","tel":"Pole \"{label}\" mus\u00ed b\u00fdt platn\u00e9 telefonn\u00ed \u010d\u00edslo","maxLength":"Pole \"{label}\" mus\u00ed b\u00fdt nanejv\u00fd\u0161 <strong>{maxLength}<\/strong> znak\u016f dlouh\u00e9","minLength":"Pole \"{label}\" mus\u00ed b\u00fdt alespo\u0148 <strong>{minLength}<\/strong> znak\u016f dlouh\u00e9","maxFileSize":"Soubor je p\u0159\u00edli\u0161 velk\u00fd, maxim\u00e1ln\u00ed velikost souboru je {maxFileSize}."},"i18n_code":"cs","site_url":"https:\/\/www.customo.eu"},"site_url":"https:\/\/www.customo.eu","cms_url":"https:\/\/www.customo.eu\/cms","cdn_url":"https:\/\/cdn.solidpixels.com\/2.73","assets_url":"https:\/\/www.customo.eu\/assets\/cs","api_google_key":"AIzaSyCvYLRDsbq1BHsxZ2IRPuqBBQCXP_1rbfk","api_seznam_key":false,"api_sentry_key":"https:\/\/2330b8b920037a6bdc40ba9682d1ca48@o4510499984769024.ingest.de.sentry.io\/4510500090282064","date_format":{"visible":"d. m. Y","internal":"Y-m-d","visible_date":"d. m. Y","visible_time":"H:i","visible_datetime":"d. m. Y H:i","internal_date":"Y-m-d","internal_time":"H:i","internal_datetime":"Y-m-d H:i"},"version":"2.73"};</script>
+<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
+
+  
+
+<link type="text/css" href="/assets/cs/css/cached.1774870903.3895984791.core.css" rel="stylesheet" />
+
+
+
+
+  
+
+<meta name="description" content="Customo poskytuje komplexní školení pro týmy zákaznického servisu ve velkých firmách a malým a rostoucím projektům pomáhá nastavovat funkční zákaznické procesy" />
+<meta name="author" content="solidpixels., https://www.solidpixels.com" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Customo |" />
+<meta property="og:url" content="/mystery-shopping" />
+<meta property="og:title" content="MYSTERY SHOPPING" />
+<meta name="google-site-verification" content="fRMjZsMgMeMvnq9jihG10rgz3lcTOHH0ZbRlEEj6heA" />
+<meta name="fb:app_id" content="518936135263185" />
+<link type="image/png" href="/files/fav-head-cut-customo-v1.png" rel="shortcut icon" />
+<link type="image/png" href="/files/responsive/57/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+<link type="image/png" href="/files/responsive/114/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+<link type="image/png" href="/files/responsive/72/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link type="image/png" href="/files/responsive/144/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+<link type="image/png" href="/files/responsive/60/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="60x60" />
+<link type="image/png" href="/files/responsive/120/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="120x120" />
+<link type="image/png" href="/files/responsive/76/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="76x76" />
+<link type="image/png" href="/files/responsive/152/0/fav-head-cut-customo-v1.png" rel="apple-touch-icon-precomposed" sizes="152x152" />
+<link type="image/png" href="/files/responsive/196/0/fav-head-cut-customo-v1.png" rel="icon" sizes="196x196" />
+<link type="image/png" href="/files/responsive/96/0/fav-head-cut-customo-v1.png" rel="icon" sizes="96x96" />
+<link type="image/png" href="/files/responsive/32/0/fav-head-cut-customo-v1.png" rel="icon" sizes="32x32" />
+<link type="image/png" href="/files/responsive/16/0/fav-head-cut-customo-v1.png" rel="icon" sizes="16x16" />
+<link type="image/png" href="/files/responsive/128/0/fav-head-cut-customo-v1.png" rel="icon" sizes="128x128" />
+<meta type="image/png" name="msapplication-TileImage" content="/files/responsive/144/0/fav-head-cut-customo-v1.png" />
+<meta type="image/png" name="msapplication-square70x70logo" content="/files/responsive/70/0/fav-head-cut-customo-v1.png" />
+<meta type="image/png" name="msapplication-wide310x150logo" content="/files/responsive/310/0/fav-head-cut-customo-v1.png" />
+<meta type="image/png" name="msapplication-square310x310logo" content="/files/responsive/310/0/fav-head-cut-customo-v1.png" />
+
+  
+</head>
+<body class = "production use-nav-font-family-normal use-underline--normal use-submenu--slide-down use-logo-font-family-normal page-animation-scroll use-base-font-family-normal use-base-text-link-underline use-base-text-link-blank-icon use-headings-font-family-normal use-headings-link-color use-headings-underline use-h1-font-family-normal use-h2-font-family-normal use-h3-font-family-normal use-h4-font-family-normal use-button-font-family-normal use-button-type--default use-button-icon--none use-blockquote-font-family-normal use-blockquote-decor use-divider-type--stripe use-accordion-classic-title-font-family-normal use-accordion--animated use-accordion-showmore-title-font-family-normal use-tab-link-font-family-normal use-tab-link-border--default use-tab-vertical-link-border--default use-footer-align--sm-left use-search--default  use-menu-bar use-header-fixed use-header-priority cms-page-read cms-page-cs_page120">
+
+  <div id = "page" class = "page">
+      <div id = "header" class = "header" role="banner">
+        <div class = "row-main">
+          <div class = "menu menu--bar menu--bar-logo-left menu--bar-primary-center menu--bar-secondary-right menu--bar-misc-right submenu--dropdown menu--sm-logo-left menu--sm-toggle-right menu--sm-flyout_right menu--lg-priority">
+    <div class = "menu__region menu__toggle">
+      <button id = "nav-toggle" type = "button" data-sm-type = "flyout_right" data-lg-type = "priority" data-toggle = "nav" data-target = "#menu-main" class = "nav-toggle nav-toggle--cross" aria-expanded = "false">
+        <span class = "nav-toggle-icon cssicon cssicon--size-parent cssicon--hamburger"><span></span></span>
+        <span class = "nav-toggle-label">Menu</span>
+      </button>
+    </div>
+
+    <div class = "menu__region menu__header">
+        <div class = "logo logo--image">
+
+            <a class = "logo__element" href = "" title = "Customo.cz">
+              <img src="/files/logo-whitemini-512w-tr.svg" width="512" height="120" alt="Customo.cz" class="logo__image logo__image--primary"></img>
+              
+            </a>
+        </div>
+
+
+    </div>
+
+  <!-- Duplicitni zobrazeni elementu, ktere by se normalne na mobilu schovaly do menu -->
+  <div class = "menu__region menu__special">
+  </div> <!-- /menu__special -->
+
+  <div class = "menu__wrapper">
+    <div class = "menu__region menu__inner">
+        <div class = "menu__region menu__primary" data-nav = "priority" data-submenu = "doubleTap">
+            <nav id = "menu-main" class = "nav nav--primary" aria-label = "Hlavní">
+              <ul id="menu-1" class="nav__list nav__list--level-0"><li class="nav__item"><a href="" class="nav__link "><span class="nav__label">ÚVOD</span></a></li> <li class="nav__item"><a href="#vedeli-jste-ze" class="nav__link "><span class="nav__label">VĚDĚLI JSTE</span></a></li> <li class="nav__item has-children active"><span class="nav__link  active"><span class="nav__label">NABÍDKA</span></span><div class="submenu submenu--level-0"><ul id="menu-108" class="nav__list nav__list--level-1"><li class="nav__item"><a href="/pro-tymy-zakaznickeho-servisu/" class="nav__link "><span class="nav__label">PRO TÝMY ZÁKAZNICKÉHO SERVISU</span></a></li> <li class="nav__item"><a href="/pracovni-anglictina/" class="nav__link "><span class="nav__label">PRACOVNÍ ANGLIČTINA </span></a></li> <li class="nav__item active"><a href="/mystery-shopping/" class="nav__link  active" aria-current="page"><span class="nav__label">MYSTERY SHOPPING</span></a></li></ul></div></li> <li class="nav__item"><span class="nav__link "><span class="nav__label">ZÁKAZNÍCI</span></span></li> <li class="nav__item"><a href="#kdo" class="nav__link "><span class="nav__label">O MNĚ</span></a></li> <li class="nav__item"><a href="/clanky/" class="nav__link "><span class="nav__label">ČLÁNKY</span></a></li></ul>
+            </nav>
+
+        </div><!-- /menu__primary -->
+
+
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    <div id = "main" class = "main" role="main">
+      <div class="section height--normal align--middle color--default"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-html" data-lb="region" data-lb-id="sections.0.rows.0.columns.0.regions.0"><!-- Google tag (gtag.js) -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DNC9RJDFXW');
+</script></div></div></div></div></div><div class="section height--high align--middle color--default section-width-boxed section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.1.rows.0.columns.0.regions.0"><div class="block-spacer-element" style="--height:446px;--height-tablet:446px;--height-mobile:0px"></div></div></div></div></div><div class="section-background container-fit container-fit--cover" style="--background:#fff"><img class="" style="--focus-point:47% 79%;--focus-point-sm:47% 79%" alt="" srcset="/files/responsive/360/0/headers-2023-v1-grey1.png 360w,/files/responsive/720/0/headers-2023-v1-grey1.png 720w,/files/responsive/980/0/headers-2023-v1-grey1.png 980w,/files/responsive/1280/0/headers-2023-v1-grey1.png 1280w,/files/responsive/1920/0/headers-2023-v1-grey1.png 1920w,/files/responsive/2600/0/headers-2023-v1-grey1.png 2560w" sizes="(orientation: portrait) 266.43vw, 100vw"/></div></div><div class="section height--low align--middle color--default section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.2.rows.0.columns.0.regions.0"><h1 class="text-large">Jak na&nbsp;<span class="text-highlight" style="color:#FFFFFF">super</span> spokojené zákazníky ve službách a maloobchodu</h1>
+
+<h3>Identifikujte největší výzvy své zákaznické péče a vyřešte je pomocí kvalitního tréninku lidí.&nbsp;</h3>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.2.rows.1.columns.0.regions.0"><div class="block-spacer-element" style="--height:48px;--height-tablet:48px;--height-mobile:0px"></div></div></div></div></div><div class="section-background" style="--background:rgb(244, 245, 246)"></div></div><div id="jak-to-probiha" class="section height--normal align--middle color--default section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.0.columns.0.regions.0"><h2 class="text-large" style="color: rgb(39, 170, 225);">Vystupte z průměru.&nbsp;</h2>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.3.rows.1.columns.0.regions.0"><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-6-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.2.columns.0.regions.0"><h3>Online reference</h3>
+
+<p>Čísla hovoří jasně. Až 92% lidí si hledá online reference, než u vás poprvé nakoupí a jsou ochotni utratit až o 31% víc peněz, pokud jsou vaše recenze pozitivní. <strong>A 59% všech referencí se týkají vašeho zákaznického servisu.&nbsp;</strong></p>
+</div> <div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.2.columns.0.regions.1"><h3>Zvyšte svůj profit</h3>
+
+<p>Představte si, že nevíte, kam skočit, protože vaše skvělá pověst&nbsp;<strong>přitahuje záplavu&nbsp;nových</strong>&nbsp;zákazníků. Máte termíny vyprodané týdny nebo měsíce dopředu a můžete se pustit do další výzvy.&nbsp;Můžete rozšířit tým, služby nebo&nbsp;otevřít další pobočku. A nebo zvýšit ceny.&nbsp;</p>
+</div></div> <div class="col col-7-12 grid-6-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.2.columns.1.regions.0"><h3>Mystery shopping</h3>
+
+<p><strong>Máte pochybnosti</strong>,&nbsp;jak služby vypadají ve vaší nepřítomnosti? Jak funguje váš penzion nebo <strong>jestli máte místo prodavaček jen podavačky</strong>? My vám je otestujeme a vytvoříme podrobný report z mystery shoppingu. Osobně, online nebo po telefonu, právě tak, jak to váš obchod potřebuje. Dle výsledků sestavíme&nbsp;další postup spolupráce.&nbsp;&nbsp;</p>
+</div> <div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.2.columns.1.regions.1"><h3><b>Dovolte si zvýšení cen</b></h3>
+
+<p>Zdražování je jako lavina a nemine nikoho.&nbsp;Vaši zákazníci budou ochotni u vás dál utrácet, ale pouze za předpokladu opravdu skvělých služeb. Nakonec u <strong>70% klientů je servis a celkový zážitek důležitější než cena</strong>.&nbsp;&nbsp;</p>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-6-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.3.columns.0.regions.0"><h3>Udržte si vysoký standard i s příchodem nových zaměstnanců</h3>
+
+<p>Vlastníte byznys a máte tým lidí?&nbsp;Zajistěte, aby byly služby přesně takové (nebo dokonce lepší), jako když je poskytujete vy sami.&nbsp;Ujistěte se, že <strong>standard zůstane, i když zrovna nejste v práci</strong>.&nbsp;Předejděte jakýmkoli poklesům v kvalitě a zajistěte, že vaši zákazníci budou nadále oceňovat úroveň služeb, kterou jim poskytujete. Buďte příkladem a vytvořte prostředí, ve kterém vaši zaměstnanci sdílejí vaši vášeň a závazek k vysokým standardům. A Customo vám pomůže se sepsáním základních procesů, aby předávání těchto hodnot nově příchozím bylo co nejjednodušší.&nbsp;</p>
+</div></div> <div class="col col-7-12 grid-6-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.3.rows.3.columns.1.regions.0"><h3><b>Prodávejte víc svým stávajícím klientům</b></h3>
+
+<p>Nebuďte jen obchodníci, ale skutečně pomáhejte svým klientům, buďte jejich partnery&nbsp;a přinášejte vysokou hodnotu svých služeb.&nbsp;Při prodávání extra služeb, nabízení členství nebo následné péče jako zákazníci přísně rozlišujeme mezi tlakem na zisk a mezi <strong>opravdovým zájmem nám pomoct</strong>.&nbsp;S tímto přístupem získáte loajalitu svých stávajících klientů a jejich ochotu vám důvěřovat a investovat do vašich nabídek.</p>
+</div> <div class="block block-button" data-lb="region" data-lb-id="sections.3.rows.3.columns.1.regions.1"><div class="center"><a class="btn btn-primary btn-lg" href="#kdo"><span class="btn__icon" aria-hidden="true"></span><span class="btn__label">Kontakt</span></a></div></div></div></div></div><div class="section-background" style="--background:#fff"></div></div><div id="jak-to-probiha" class="section height--normal align--middle color--default section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-6-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.0.columns.0.regions.0"><h2 class="text-large">S čím vám můžu pomoct?</h2>
+</div> <div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.0.columns.0.regions.1"><p>Poznejte lépe své zákazníky, zajistěte si jejich lajalitu a kontinuálně zlepšujte zákaznickou zkušenost s vaší firmou.&nbsp;</p>
+
+<ul>
+	<li>Vzájemně se poznáme</li>
+	<li>Nastavíme spolupráci</li>
+	<li>Optimalizujeme vaše procesy</li>
+	<li>Změříme výsledky</li>
+	<li>Vyškolíme personál</li>
+</ul>
+
+<p></p>
+</div> <div class="block block-button" data-lb="region" data-lb-id="sections.4.rows.0.columns.0.regions.2"><div class="center"><a class="btn btn-default" href="https://customo-eu.reservio.com/" target="_blank" rel="noopener"><span class="btn__icon" aria-hidden="true"></span><span class="btn__label">REZERVOVAT ÚVODNÍ SCHŮZKU</span></a></div></div></div> <div class="col col-7-12 grid-6-12"><div class="block block-image" data-lb="region" data-lb-id="sections.4.rows.0.columns.1.regions.0"><div class="image image-mask ratio-original" style="--aspect-ratio:1.499"><img class="" width="2600" height="1733" srcset="/files/responsive/360/0/dsc03999-edit-1pp.jpg 360w,/files/responsive/720/0/dsc03999-edit-1pp.jpg 720w,/files/responsive/980/0/dsc03999-edit-1pp.jpg 980w,/files/responsive/1280/0/dsc03999-edit-1pp.jpg 1280w,/files/responsive/1920/0/dsc03999-edit-1pp.jpg 1920w,/files/responsive/2600/0/dsc03999-edit-1pp.jpg 2600w" sizes="(min-width:1390px) 695px, (min-width:720px) 50.00vw, 100.00vw"/><noscript><img width="2600" height="1733" srcset="/files/responsive/360/0/dsc03999-edit-1pp.jpg 360w,/files/responsive/720/0/dsc03999-edit-1pp.jpg 720w,/files/responsive/980/0/dsc03999-edit-1pp.jpg 980w,/files/responsive/1280/0/dsc03999-edit-1pp.jpg 1280w,/files/responsive/1920/0/dsc03999-edit-1pp.jpg 1920w,/files/responsive/2600/0/dsc03999-edit-1pp.jpg 2600w" sizes="(min-width:1390px) 695px, (min-width:720px) 50.00vw, 100.00vw"></noscript></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-6-12"><div class="container container--ratio ratio-none box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="container"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-3-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.0.items.0.rows.0.columns.0.regions.0"><h2 class="center">01</h2>
+</div></div> <div class="col col-4-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.0.items.0.rows.0.columns.1.regions.0"><h3>Konzultace&nbsp;</h3>
+
+<p>Samostatně <strong>k řešení konkrétního problému</strong> nebo v rámci komplexnější spolupráce. Čas konzultace si můžete zarezervovat dopředu.&nbsp;</p>
+</div></div></div>
+</div><div class="container-background"></div></div></div>
+</div><div class="container-background"></div></div> <div class="container container--ratio ratio-none box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="container"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-3-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.1.items.0.rows.0.columns.0.regions.0"><h2 class="center">02</h2>
+</div></div> <div class="col col-4-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.1.items.0.rows.0.columns.1.regions.0"><h3>Audit zákaznické péče</h3>
+
+<p>Na začátku je dotazník, který vyplníte a poté spolu probereme kde stojíte právě teď, kam potřebujete dojít a jak zvládnout celý proces. <strong>Každá cesta má začátek a cíl, díky auditu si vytvoříte mapu, abyste se po této cestě neztratili.&nbsp;</strong></p>
+</div></div></div>
+</div><div class="container-background"></div></div></div>
+</div><div class="container-background"></div></div> <div class="container container--ratio ratio-none box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="container"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-3-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.2.items.0.rows.0.columns.0.regions.0"><h2 class="center">03</h2>
+</div></div> <div class="col col-4-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.0.regions.2.items.0.rows.0.columns.1.regions.0"><h3>Angličtina pro váš business</h3>
+
+<p>Chcete svou&nbsp;<strong>službu nabídnout úspěšně i zahraniční klientele</strong>, ale příprava celé zákaznické cesty v AJ vám připadá jako nadlidský úkol? Pomůžu vám práci naporcovat, provedu vás&nbsp;procesem,&nbsp;<strong>texty spolu přeložíme nebo překlady zkontroluju.</strong></p>
+</div></div></div>
+</div><div class="container-background"></div></div></div>
+</div><div class="container-background"></div></div></div> <div class="col col-7-12 grid-6-12"><div class="container container--ratio ratio-none box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="container"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-3-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.1.regions.0.items.0.rows.0.columns.0.regions.0"><h2 class="center">04</h2>
+</div></div> <div class="col col-4-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.1.regions.0.items.0.rows.0.columns.1.regions.0"><h3>Školení personálu</h3>
+
+<p>Personál, co vás skvěle reprezentuje, poskytuje nejlepší zákaznický servis, pomáhá k šíření dobré pověsti o vaší značce a navíc zvládá dobře méně příjemné momenty práce s lidmi.<strong>Nepodceňujte, koho pustíte do svého podnikatelského snu.</strong>&nbsp;</p>
+</div></div></div>
+</div><div class="container-background"></div></div></div>
+</div><div class="container-background"></div></div> <div class="container container--ratio ratio-none box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="container"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-3-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.1.regions.1.items.0.rows.0.columns.0.regions.0"><h2 class="center">05</h2>
+</div></div> <div class="col col-4-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.4.rows.1.columns.1.regions.1.items.0.rows.0.columns.1.regions.0"><h3>Mystery shopping&nbsp;</h3>
+
+<p>Lidé se přirozeně chovají jinak, když jste ve svém byznyse přítomný. Chcete vědět, jak vaše služby vidí každodenní zákazník? Jak se váš tým chová, když tam nejste?&nbsp;Jak dlouho jim interakce zaberou a jak jsou účinné? Nastavíme vám mystery shopping na ukazatele, které chcete měřit a v<strong>ýstup z této spolupráce vám bude dlouhodobě sloužit jako kompas pro udržení vysoké úrovně služeb.&nbsp;</strong></p>
+</div></div></div>
+</div><div class="container-background"></div></div></div>
+</div><div class="container-background"></div></div></div></div></div><div class="section-background" style="--background:#fff"></div></div><div class="section height--normal align--middle color--default"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.0.columns.0.regions.0"><h2>Proč se to rozhodně vyplatí?</h2>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-6-12"><div class="block block-accordion accordion--classic">
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Naplněná kapacita</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.0.rows.0.columns.0.regions.0"><p>Jaký by byl váš příjem v 100% naplněné kapacitě? Kdybyste si mohli sami určit dny volna, protože máte jistotu, že zbytek termínů bude slušně obsazen? <strong>Nikdo z nás nemá rád změny a nejmíň spokojený zákazník. Proto se bude vracet a přinášet s sebou nové zákazníky.&nbsp;</strong></p>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Opakující se věrní zákazníci</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.1.rows.0.columns.0.regions.0"><p>Protože když najdeme místo, kde se nám vždy dostane skvělé péče, dokáže nás v dobrém překvapit, tak proč bychom hledali další?&nbsp;&nbsp;</p>
+</div></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Nižší náklady na reklamu</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.2.rows.0.columns.0.regions.0"><p>Shnánění nových zákazníků se přeceňuje a firmy utrácejí často vysoké částky za reklamu. Starejte se o stávající zákazníky&nbsp;a o<strong>ni vám reklamu udělají zcela ZDARMA.&nbsp;</strong></p>
+</div></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Personál, který budou klienti milovat</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.3.rows.0.columns.0.regions.0"><p>Všichni za firmu? Přijímání lidí do vlastního podniku je zásadní krok, jejich školení a sladění s vašimi hodnotami ještě zásadnější. <strong>Nedovolte, aby se vaše služby zhoršily jen proto, že je neděláte vy sami</strong>. Společně nastavíme priority pro vaši situaci a proškolíme celý váš tým.</p>
+</div></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Férové ceny pro obě strany</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.4.rows.1.columns.0.regions.0"><p>Víte, že cena nehraje zásadní roli v rozhodování o nákupu? Jsou to emoce a zkušenosti. Nabídněte skvělou hodnotu a můžete si říct cenu, která bude férové pro obě strany.&nbsp;</p>
+</div></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Přímé rezervace bez zprostředkovatelů</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.5.rows.0.columns.0.regions.0"><p>Rezervační portály mají na trhu své místo. Máte-li ale vracející&nbsp;se zákazníky, budou kupovat napřímo. <strong>Kolik % nyní platíte provize?&nbsp;</strong></p>
+</div></div></div>
+</div></div></div>
+<div class="accordion"><div class="accordion__title"><span class="accordion__title-label">Skvělé recence, co přitáhnou další zákazníky</span><span class="accordion__title-action" data-icon-name="caret-down"><span class="accordion__title-icon accordion__title-icon--open" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span class="accordion__title-icon accordion__title-icon--close" type="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span></span></div><div class="container accordion__content"><div class="container-body">
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.0.items.6.rows.0.columns.0.regions.0"><p>Řekněte o sobě, že jste nejlepší a nikdo vám to neuvěří. Nechte nadšené zákazníky, aby to řekli o vás! Naučte se pracovat s referencemi.&nbsp;</p>
+</div></div></div>
+</div></div></div>
+</div> <div class="block block-button" data-lb="region" data-lb-id="sections.5.rows.1.columns.0.regions.1"><div class="center"><a class="btn btn-inverse btn-lg" href="https://customo-eu.reservio.com/" target="_blank" rel="noopener"><span class="btn__icon" aria-hidden="true"></span><span class="btn__label">Chci první schůzku zdarma</span></a></div></div></div> <div class="col col-7-12 grid-6-12"><div class="block block-image" data-lb="region" data-lb-id="sections.5.rows.1.columns.1.regions.0"><div class="image image-mask ratio-original" style="--aspect-ratio:1.631"><img class="" width="1476" height="905" srcset="/files/responsive/360/0/janaavatar.jpg 360w,/files/responsive/720/0/janaavatar.jpg 720w,/files/responsive/980/0/janaavatar.jpg 980w,/files/responsive/1280/0/janaavatar.jpg 1280w,/files/responsive/1920/0/janaavatar.jpg 1476w" sizes="(min-width:1390px) 695px, (min-width:720px) 50.00vw, 100.00vw"/><noscript><img width="1476" height="905" srcset="/files/responsive/360/0/janaavatar.jpg 360w,/files/responsive/720/0/janaavatar.jpg 720w,/files/responsive/980/0/janaavatar.jpg 980w,/files/responsive/1280/0/janaavatar.jpg 1280w,/files/responsive/1920/0/janaavatar.jpg 1476w" sizes="(min-width:1390px) 695px, (min-width:720px) 50.00vw, 100.00vw"></noscript></div></div></div></div></div></div><div id="reference" class="section height--low align--middle color--default section-width-boxed section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.6.rows.0.columns.0.regions.0"><h2 class="text-large">Reference</h2>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.6.rows.1.columns.0.regions.0"><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-5-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.6.rows.2.columns.0.regions.0"><p>„Ráda bych se podělila o svou zkušenost s Janou Streichsbierovou, která mi jako asistentce ředitelky Elišky (Breberky.cz) velmi pomohla s timemanagementem. Spolupráce s ní byla velmi příjemná a efektivní.</p>
+
+<p>Do programu jsme šli s konkrétním cílem - zlepšit můj timemanagement a efektivitu práce. Jana mi nabídla velmi praktické rady a techniky, jak si lépe plánovat a organizovat svůj pracovní den. Velmi mi pomohlo i to, že jsme společně prošly mé pracovní úkoly a udělaly jsme si přehled o tom, co je pro mě nejdůležitější. Naplánovaly jsme si odpolední bloky, které dodržuji a to mi opravdu pomáhá.&nbsp;</p>
+
+<p>Po absolvování kurzu jsem si všimla velkého rozdílu v tom, jak efektivně dokážu pracovat. Už se mi nestává, že se ztrácím v různých úkolech a nedokážu si prioritizovat. Jsem si jistá, že tyto nové dovednosti mi pomohou nejen v práci, ale i v soukromí.</p>
+
+<p><strong>Zuzana Eliášová</strong>, asistentka a koordinátorka Breberky.cz</p>
+</div> <div class="container container--ratio ratio-none color--default box-container box-container--default"><div class="container-body flex">
+<div class="flex__item"><div class="block block-inline" data-lb="region" data-lb-id="sections.6.rows.2.columns.0.regions.1.items.0"><p>Naši "Terňáci" na školení.💪 stala se z toho už taková rodinná akce. Tato doba je opravdu náročná a chceme našim zákazníkům přinášet co nejlepší zážitek z nakupování. O tom to celé bylo, prvně mystery shooping na našich pobočkách, zákaznický servis, moment pravdy, a o zákaznících a jejich potřebách👍 Nejskvělejší Jana Streichsbierová, CXAC a její kolega Marcel Mráz nás naprosto nadchli❤️ Jejich pohled na situaci, přístup, dynamika celého školení a hlavně ucelený pohled na problematiku! Jak nám řekli “stali jsme se fanoušky Terna” tak z nás jsou fanoušci Jany a Marcela! Děkujeme a těšíme se na příště</p>
+
+<p><b>Markéta Soukupová, MBA</b>, HR director, Jednota, spotřební družstvo České Budějovice</p>
+</div></div>
+<div class="flex__item"><div class="block block-image" data-lb="region" data-lb-id="sections.6.rows.2.columns.0.regions.1.items.1"><div class="image image-mask ratio-original" style="--aspect-ratio:1.333"><img class="" width="1170" height="878" srcset="/files/responsive/360/0/terno-ref.jpg 360w,/files/responsive/720/0/terno-ref.jpg 720w,/files/responsive/980/0/terno-ref.jpg 980w,/files/responsive/1280/0/terno-ref.jpg 1170w" sizes="(min-width:1390px) 579px, (min-width:720px) 41.67vw, (min-width:480px) 100.00vw, 100.00vw"/><noscript><img width="1170" height="878" srcset="/files/responsive/360/0/terno-ref.jpg 360w,/files/responsive/720/0/terno-ref.jpg 720w,/files/responsive/980/0/terno-ref.jpg 980w,/files/responsive/1280/0/terno-ref.jpg 1170w" sizes="(min-width:1390px) 579px, (min-width:720px) 41.67vw, (min-width:480px) 100.00vw, 100.00vw"></noscript></div></div></div>
+</div><div class="container-background" style="--background:rgb(231, 230, 230)"></div></div></div> <div class="col col-6-12 grid-6-12"><div class="container container--ratio ratio-none color--inverse box-container box-container--secondary"><div class="container-body flex">
+<div class="flex__item"><div class="block block-inline" data-lb="region" data-lb-id="sections.6.rows.2.columns.1.regions.0.items.0"><p>„Chci doporučit Customo kurzy na míru, které jsem absolvovala spolu s mou asistentkou Zuzkou pro&nbsp;zlepšení našeho time managementu. Během pouhých 4 sezení jsme viděli ohromný rozdíl v tom, jak úspěšně dokážeme organizovat svůj pracovní den.</p>
+
+<p>Komunikace s paní Janou Streichsbierovou byla vynikající a velmi profesionální. Po pochopení našich konkrétních potřeb byl náš kurz plánován tak, aby nám co nejlépe vyhovoval. Zuzka i já jsme se naučily nové nástroje a techniky, které nám pomohly lépe plánovat a organizovat naše pracovní úkoly. Díky tomu jsme byly schopny správně rozdělit svůj čas a prioritizovat úkoly.</p>
+
+<p>Jsme opravdu vděčné za tuto zkušenost a rády bychom Customo vřele doporučily každému, kdo hledá pomoc s time managementem a organizací práce. Jejich služby jsou skvěle přizpůsobené individuálním potřebám a Janin přístup byl velmi profesionální a vstřícný. ”</p>
+
+<p></p>
+</div></div>
+<div class="flex__item"><div class="block block-image" data-lb="region" data-lb-id="sections.6.rows.2.columns.1.regions.0.items.1"><div class="flexcard flexcard-icon flexcard-horizontal flexcard-horizontal--right valign-middle size-lg"><div class="flexcard-media"><div class="image-icon-wrapper"><div class="image-icon"><img class="" src="/files/breber.jpeg" alt="" width="224" height="224"/></div></div></div><div class="flexcard-content"><div class="flexcard-content-wrapper"><div class="text-block"><p><strong>Eliška Dobiášová Turková</strong>,<br />
+majitelka Breberky.cz</p>
+</div></div></div></div></div></div>
+</div><div class="container-background" style="--background:rgb(0, 28, 46)"></div></div></div> <div class="col col-12-12 grid-1-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.6.rows.2.columns.2.regions.0"><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.6.rows.3.columns.0.regions.0"><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div></div><div class="section-background" style="--background:rgb(255, 255, 255)"></div></div><div id="kdo" class="section height--medium align--middle color--default section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-4-12"><div class="block block-image" data-lb="region" data-lb-id="sections.0.rows.0.columns.0.regions.0"><a class="image image-mask ratio-square fancybox" href="/files/img-3901-copy-pp.jpg" rel="fancybox"><img class="" width="1733" height="2600" srcset="/files/responsive/360/0/img-3901-copy-pp.jpg 360w,/files/responsive/720/0/img-3901-copy-pp.jpg 720w,/files/responsive/980/0/img-3901-copy-pp.jpg 980w,/files/responsive/1280/0/img-3901-copy-pp.jpg 1280w,/files/responsive/1920/0/img-3901-copy-pp.jpg 1733w" sizes="(min-width:1390px) 463px, (min-width:720px) 33.33vw, 100.00vw" style="--focus-point:50% 15%"/><noscript><img width="1733" height="2600" srcset="/files/responsive/360/0/img-3901-copy-pp.jpg 360w,/files/responsive/720/0/img-3901-copy-pp.jpg 720w,/files/responsive/980/0/img-3901-copy-pp.jpg 980w,/files/responsive/1280/0/img-3901-copy-pp.jpg 1280w,/files/responsive/1920/0/img-3901-copy-pp.jpg 1733w" sizes="(min-width:1390px) 463px, (min-width:720px) 33.33vw, 100.00vw"></noscript></a></div></div> <div class="col col-5-12 grid-8-12"><div class="row"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.0.rows.0.columns.1.rows.0.columns.0.regions.0"><h4 style="color:#494B60">Jsem<strong> Jana Streichsbierová</strong> a mou vášní je<strong> zákaznický servis.</strong></h4>
+
+<p>Celý život jsem se snažila skvěle reprezentovat firmy a společnosti tím, že jsem&nbsp;se starala o jejich zákazníky. Mám ověřeno, že správné nastavení mysli&nbsp; a procesů&nbsp;může byznys v jakémholiv oboru eskalovat o několiv stupňů výš.&nbsp;</p>
+
+<p>Zároveň jsem se pracovně ocitla skoro na dvě dekády mimo české prostředí a na vlastní kůži zažila servis v jiných zemích. Přátelský, i když někdy značně rozevlátý španělský, velmi korektní a moderní v Nizozemí a efektivní a lidský v Belgii.&nbsp;</p>
+
+<p>Miluju práci s lidmi, kterým&nbsp;záleží na spokojených zákaznících&nbsp;stejně&nbsp;jako na jejich profitu. S dobře nastavenými zákaznickými procesy lze totiž mít úspěšně obojí.&nbsp;</p>
+</div></div></div>
+<div class="row"><div class="col col-1-12 grid-5-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.0.rows.0.columns.1.rows.1.columns.0.regions.0"><h4 class="text-large"><strong>Potřebujete více informací?&nbsp;</strong></h4>
+</div></div> <div class="col col-6-12 grid-7-12"><div class="block block-button" data-lb="region" data-lb-id="sections.0.rows.0.columns.1.rows.1.columns.1.regions.0"><div class="left"><a class="btn btn-primary" href="https://customo-eu.reservio.com" target="_blank" rel="noopener"><span class="btn__icon" aria-hidden="true"></span><span class="btn__label">Rezervujte si ÚVODNÍ schůzku</span></a></div></div></div></div></div></div></div><div class="section-background" style="--background:rgb(244, 245, 246)"></div></div><div id="mam-zajem" class="section height--normal align--middle color--inverse section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-7-12"><div class="row"><div class="col col-1-12 grid-9-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.8.rows.0.columns.0.rows.0.columns.0.regions.0"><h2 class="text-large">Kontakt</h2>
+</div> <div class="block block-inline" data-lb="region" data-lb-id="sections.8.rows.0.columns.0.rows.0.columns.0.regions.1"><p class="text-large">jana@customo.eu</p>
+
+<p class="text-large"><u>00420 777 263 857<a href="tel:+420 ‭777 263 857‬">‬</a></u><br />
+Nebo&nbsp;si <a href="https://customo-eu.reservio.com" target="_blank">rezervujte půlhodinku</a> a dotaz probereme osobně.&nbsp;</p>
+</div> <div class="block block-image" data-lb="region" data-lb-id="sections.8.rows.0.columns.0.rows.0.columns.0.regions.2"><div class="flexcard flexcard-icon flexcard-none flexcard--stretch-content size-md align-left"><a class="flexcard-media" href="https://www.linkedin.com/in/janastreichsbierova/" target="_blank" rel="noopener"><div class="image-icon-wrapper"><div class="image-icon radius--inherit"><img class="" src="/files/li-ikona.png" alt="" width="204" height="192"/></div></div></a></div></div></div> <div class="col col-10-12 grid-3-12"><div class="block block-spacer" data-lb="region" data-lb-id="sections.8.rows.0.columns.0.rows.0.columns.1.regions.0"><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div>
+<div class="row"><div class="col col-1-12 grid-12-12"></div></div></div> <div class="col col-8-12 grid-5-12">
+  <form method="post" action="#form_1" class="block block-form block-form--inverse" id="form_1" autocomplete="off">
+
+    <div  class = "row">
+        <div   class = "col col-1-12 grid-6-12">
+            <div class = "field field--text" id = "field-wrapper-jmeno">
+  <div class = "field-wrapper field-wrapper--input">
+          <label class = "field-label field-label--input" for = "field-jmeno" id = "label-jmeno">Jméno<span class = "field__required">*</span></label>
+
+    
+
+        <input type="text" value="" name="form_1[jmeno]" class="field-control field-control--input" required id="field-jmeno">
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+        <div   class = "col col-7-12 grid-6-12">
+            <div class = "field field--text" id = "field-wrapper-prijmeni">
+  <div class = "field-wrapper field-wrapper--input">
+          <label class = "field-label field-label--input" for = "field-prijmeni" id = "label-prijmeni">Příjmení<span class = "field__required">*</span></label>
+
+    
+
+        <input type="text" value="" name="form_1[prijmeni]" class="field-control field-control--input" required id="field-prijmeni">
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+    <div  class = "row">
+        <div   class = "col col-1-12 grid-6-12">
+            <div class = "field field--email" id = "field-wrapper-email">
+  <div class = "field-wrapper field-wrapper--input">
+          <label class = "field-label field-label--input" for = "field-email" id = "label-email">E-mail<span class = "field__required">*</span></label>
+
+    
+
+        <input type="email" value="" name="form_1[email]" class="field-control field-control--input" required id="field-email">
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+        <div   class = "col col-7-12 grid-6-12">
+            <div class = "field field--phone" id = "field-wrapper-telefon">
+  <div class = "field-wrapper field-wrapper--phone">
+          <label class = "field-label field-label--phone" for = "field-telefon" id = "label-telefon">Telefon<span class = "field__required">*</span></label>
+
+    
+
+        <input type="tel" value="" name="form_1[telefon]" class="field-control field-control--phone" required id="field-telefon">
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+    <div  class = "row">
+        <div   class = "col col-1-12 grid-12-12">
+            <div class = "field field--text" id = "field-wrapper-nazev-vasi-spolecnosti">
+  <div class = "field-wrapper field-wrapper--input">
+          <label class = "field-label field-label--input" for = "field-nazev-vasi-spolecnosti" id = "label-nazev-vasi-spolecnosti">Název vaší společnosti</label>
+
+    
+
+        <input type="text" value="" name="form_1[nazev-vasi-spolecnosti]" class="field-control field-control--input" id="field-nazev-vasi-spolecnosti">
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+    <div  class = "row">
+        <div   class = "col col-1-12 grid-12-12">
+            <div class = "field field--textarea" id = "field-wrapper-vase-zprava">
+  <div class = "field-wrapper field-wrapper--textarea">
+          <label class = "field-label field-label--textarea" for = "field-vase-zprava" id = "label-vase-zprava">Vaše zpráva<span class = "field__required">*</span></label>
+
+    
+
+        <textarea name="form_1[vase-zprava]" class="field-control field-control--textarea" placeholder="V jak&eacute;m oboru va&scaron;e firma pracuje? Čeho chcete pomoc&iacute; kurzu dos&aacute;hnout?" required id="field-vase-zprava"></textarea>
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+    <div  class = "row">
+        <div   class = "col col-1-12 grid-12-12">
+            <div class = "field field--button" id = "field-wrapper-poslat">
+  <div class = "field-wrapper field-wrapper--button center">
+
+    
+
+        <button name="form_1[poslat]" value="submit" class="btn btn-primary btn-lg" type="submit" id="field-poslat"><span class="btn__icon" aria-hidden="true"></span><span class="btn__label">poslat</span></button>
+
+
+
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+
+  <div class = "field field--antispam" id = "field-wrapper-form_1_ants">
+  <div class = "field-wrapper field-wrapper--antispam">
+
+    
+
+        <input data-type="socaptcha" data-socaptcha type="hidden" name="form_1[form_1_ants]" class="field-control field-control--antispam" id="field-form_1_ants">
+<div style = "display:none;"><input type = "text" name = "form_country_code2" value = "" /></div><div style = "display:none;"><input type = "text" name = "form_country_code3" value = "b61fd26bbabcd53d56bbe1eb00df61403bb129f0" /></div>
+
+
+
+  </div>
+
+</div>
+
+
+  <input type = "hidden" name = "form-action" value = "form_1">
+  </form>
+
+</div></div></div><div class="section-background" style="--background:rgb(37, 170, 225)"></div></div><div id="blog" class="section height--medium align--middle color--inverse section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-inline" data-lb="region" data-lb-id="sections.9.rows.0.columns.0.regions.0"><h2 class="text-large">Blog</h2>
+</div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-entries" data-lb="region" data-lb-id="sections.9.rows.1.columns.0.regions.0">
+  <div class = "entries entries-layout--grid entries-source--articles">
+
+
+    
+
+    <div class = "entries-content">
+
+
+          <div class = "entries-list grid entries-articles" style = "" data-entries = "list" >
+
+              <div class = "entry entry--grid grid-col-3 entry-articles" style = "" data-entries = "entry">
+                <div class = "entry-inner" data-clickable>
+                  
+                  
+              
+                  <div class = "entry-media" >
+  <a class = "image image-mask ratio-widescreen"  tabindex = "-1" target = "_self"  href = "/blog/male-kroky-k-velkym-zmenam">
+    <img alt="" class="" srcset="/files/responsive/360/0/holub.png 360w, /files/responsive/720/0/holub.png 720w, /files/responsive/980/0/holub.png 980w, /files/responsive/1280/0/holub.png 1200w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"><noscript><img alt="" srcset="/files/responsive/360/0/holub.png 360w, /files/responsive/720/0/holub.png 720w, /files/responsive/980/0/holub.png 980w, /files/responsive/1280/0/holub.png 1200w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"></noscript>
+  </a>
+  
+</div>
+
+              
+                    <div class = "entry-body align-left">
+                      
+              
+                      <h3 class = "entry-title">
+    <a href = "/blog/male-kroky-k-velkym-zmenam" target = "_self"  title = "Malé kroky k velkým změnám">Malé kroky k velkým změnám</a>
+</h3>
+
+              
+                      
+              
+                        <p class = "entry-body__text">Představte si, že ode dneška za tři měsíce se v rámci kybernetické bezpečnosti nebudou přijímat žádné objednávky, pokud nebudou doručeny poštovními holuby. Blbost, co?
+Podívejme se na zavádění velkých změn ve firmě očima těch, kteří je musí uskutečnit. </p>
+
+              
+                      
+              
+              
+                      
+                      
+                    </div>
+                </div>
+              </div>
+              <div class = "entry entry--grid grid-col-3 entry-articles" style = "" data-entries = "entry">
+                <div class = "entry-inner" data-clickable>
+                  
+                  
+              
+                  <div class = "entry-media" >
+  <a class = "image image-mask ratio-widescreen"  tabindex = "-1" target = "_self"  href = "/blog/trefa-jsou-prodejny-v-jihoceskem-kraji">
+    <img alt="" class="" srcset="/files/responsive/360/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 360w, /files/responsive/720/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 720w, /files/responsive/980/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 980w, /files/responsive/1280/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 1280w, /files/responsive/1920/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 1920w, /files/responsive/2600/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 2048w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"><noscript><img alt="" srcset="/files/responsive/360/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 360w, /files/responsive/720/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 720w, /files/responsive/980/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 980w, /files/responsive/1280/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 1280w, /files/responsive/1920/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 1920w, /files/responsive/2600/0/whatsapp-image-2024-04-09-at-144907-1.jpeg 2048w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"></noscript>
+  </a>
+  
+</div>
+
+              
+                    <div class = "entry-body align-left">
+                      
+              
+                      <h3 class = "entry-title">
+    <a href = "/blog/trefa-jsou-prodejny-v-jihoceskem-kraji" target = "_self"  title = "TREFA.... jsou prodejny v Jihočeském kraji">TREFA.... jsou prodejny v Jihočeském kraji</a>
+</h3>
+
+              
+                      
+              
+                        <p class = "entry-body__text">V rámci spolupráce s Jednotou České Budějovice tentokrát došlo na mystery shopping několika prodejen Trefa a následné školení jejich vedoucích. Tentokrát šlo o docela jinou práci, a to vzhledem k velikosti, umístění a zaměření těchto prodejen. 
+</p>
+
+              
+                      
+              
+              
+                      
+                      
+                    </div>
+                </div>
+              </div>
+              <div class = "entry entry--grid grid-col-3 entry-articles" style = "" data-entries = "entry">
+                <div class = "entry-inner" data-clickable>
+                  
+                  
+              
+                  <div class = "entry-media" >
+  <a class = "image image-mask ratio-widescreen"  tabindex = "-1" target = "_self"  href = "/blog/zakaznicka-zkusenost-mystery-shopping-terno">
+    <img alt="" class="" srcset="/files/responsive/360/0/terno-cb.jpg 360w, /files/responsive/720/0/terno-cb.jpg 720w, /files/responsive/980/0/terno-cb.jpg 980w, /files/responsive/1280/0/terno-cb.jpg 1024w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"><noscript><img alt="" srcset="/files/responsive/360/0/terno-cb.jpg 360w, /files/responsive/720/0/terno-cb.jpg 720w, /files/responsive/980/0/terno-cb.jpg 980w, /files/responsive/1280/0/terno-cb.jpg 1024w" sizes="(min-width:1390px) 463px, (min-width:720px) 33vw, (min-width:480px) 50vw, 100vw"></noscript>
+  </a>
+  
+</div>
+
+              
+                    <div class = "entry-body align-left">
+                      
+              
+                      <h3 class = "entry-title">
+    <a href = "/blog/zakaznicka-zkusenost-mystery-shopping-terno" target = "_self"  title = "Zákaznická zkušenost &amp; mystery shopping &amp; Terno ">Zákaznická zkušenost &amp; mystery shopping &amp; Terno </a>
+</h3>
+
+              
+                      
+              
+                        <p class = "entry-body__text">Jednota České Budějovice provozuje 32 prodejen Trefa v jihočeském kraji a 7 supermarketů Terno po celé České republice. Jako každý rok, i na 2024 bylo plánované školení pro vedoucí supermarketů a prodejen,a pro to letošní jsem byla, k mé obrovské radosti oslovena já s projektem Customo. 
+</p>
+
+              
+                      
+              
+              
+                      
+                      
+                    </div>
+                </div>
+              </div>
+            
+          </div>
+
+
+      
+
+      
+    </div>
+  </div>
+</div></div></div></div><div class="section-background" style="--background:rgb(0, 28, 46)"></div></div>
+    </div>
+      <footer id="footer" class="footer">
+        <div class="section height--low color--inverse section-has-background"><div class="section-body"><div class="row-main"><div class="col col-1-12 grid-5-12"><div class="row"><div class="col col-1-12 grid-11-12"><div class="block block-image" data-lb="region" data-lb-id=""><div class="image image-mask ratio-original" style="--aspect-ratio:4.274"><img class="" width="512" height="120" src="/files/logo-whitemini-512w-tr.svg"/><noscript><img width="512" height="120" src="/files/logo-whitemini-512w-tr.svg"></noscript></div></div></div> <div class="col col-12-12 grid-1-12"><div class="block block-spacer" data-lb="region" data-lb-id=""><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div></div> <div class="col col-6-12 grid-2-12"><div class="block block-spacer" data-lb="region" data-lb-id=""><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div> <div class="col col-8-12 grid-5-12"><div class="block block-spacer" data-lb="region" data-lb-id=""><div class="block-spacer-element" style="--height:30px;--height-tablet:30px;--height-mobile:0px"></div></div> <div class="block block-inline" data-lb="region" data-lb-id=""><h3><a href="tel:+420 ‭777 263 857‬">+420&nbsp;‭777 263 857‬</a><br />
+<a href="mailto:info@customo.cz">info@customo.eu</a></h3>
+</div> <div class="block block-social_icons" data-lb="region" data-lb-id=""><ul class="social__list social__list--link social__list--colored left"><li class="social__item"><a href="https://www.linkedin.com/in/janastreichsbierova/" class="social__link social__link--linkedin social__link--icon social__link--label" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="Go to LinkedIn"><i class="social__icon icon icon-linkedin"></i><span class="social__label">LinkedIn</span></a></li><li class="social__item"><a href="https://www.facebook.com/profile.php?id=100092743274632" class="social__link social__link--facebook social__link--icon social__link--label" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Go to Facebook"><i class="social__icon icon icon-facebook"></i><span class="social__label">Facebook</span></a></li></ul></div> <div class="block block-spacer" data-lb="region" data-lb-id=""><div class="block-spacer-element" style="--height:50px;--height-tablet:50px;--height-mobile:0px"></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-spacer" data-lb="region" data-lb-id=""><div class="block-spacer-element" style="--height:100px;--height-tablet:100px;--height-mobile:0px"></div></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"><div class="block block-divider" data-lb="region" data-lb-id=""><hr class="divider divider--normal divider--align-left" style="--divider-spacer-y:0px"/></div></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"></div></div>
+<div class="row-main"><div class="col col-1-12 grid-12-12"></div></div>
+<div class="row-main"><div class="col col-1-12 grid-10-12"><div class="block block-inline" data-lb="region" data-lb-id=""><p class="right"><a href="https://davidkuba.com" target="_blank">Design:&nbsp;<strong>dk</strong></a></p>
+</div></div> <div class="col col-11-12 grid-2-12"><div class="block block-footer" data-lb="region" data-lb-id=""><div class="right footer__brand">Běží na <a class="author" href="https://www.solidpixels.com" target="_blank" rel="noopener noreferrer">solidpixels.</a></div></div></div></div></div><div class="section-background" style="--background:rgb(0, 28, 46)"></div></div>
+      </footer>
+  </div>
+
+  <div id = "panel-cookies" class = "cookie-bar">
+  <div class = "cookie-bar-wrapper">
+    <div class = "cookie-bar-content">
+      <div class = "cookie-bar-message">
+        Abychom vám usnadnili procházení stránek, nabídli přizpůsobený obsah nebo reklamu a mohli anonymně analyzovat návštěvnost, využíváme soubory cookies, které sdílíme se svými partnery pro sociální média, inzerci a analýzu. Jejich nastavení upravíte odkazem "Nastavení cookies" a kdykoliv jej můžete změnit v patičce webu. Podrobnější informace najdete v našich Zásadách ochrany osobních údajů a používání souborů cookies. Souhlasíte s používáním cookies?
+      </div>
+
+      <div class = "cookie-bar-settings">
+        <div class = "field field--checkbox field-form_checkbox--cookie">
+          <div class = "field-wrapper field-wrapper--checkbox">
+            <input class="field-control field-control--checkbox" type = "checkbox" value = "1" id = "cookies_allow_fc" checked = "checked" disabled = "disabled">
+            <label class = "field-label field-label--checkbox" for = "cookies_allow_fc">
+              <div class = "field-control__styled-wrapper">&ZeroWidthSpace;<div class = "field-control__styled"></div></div>              Funkční cookies
+            </label>
+          </div>
+          <div class = "cookie-description">
+            Zprostředkovávají základní funkčnost stránky, web bez nich nemůže fungovat.
+          </div>
+        </div>
+
+          <div class = "field field--checkbox field-form_checkbox--cookie">
+            <div class = "field-wrapper field-wrapper--checkbox">
+              <input class="field-control field-control--checkbox" type = "checkbox" id = "cookies_allow_ac" value = "1" checked = "checked" />
+              <label class = "field-label field-label--checkbox" for = "cookies_allow_ac">
+                <div class = "field-control__styled-wrapper">&ZeroWidthSpace;<div class = "field-control__styled"></div></div>                Analytické cookies
+              </label>
+            </div>
+            <div class = "cookie-description">
+              Počítají návštěvnost webu a sběrem anonymních statistik umožňují provozovateli lépe pochopit své návštěvníky a stránky tak neustále vylepšovat.
+            </div>
+          </div>
+
+          <div class = "field field--checkbox field-form_checkbox--cookie">
+            <div class = "field-wrapper field-wrapper--checkbox">
+              <input class="field-control field-control--checkbox" type = "checkbox" id = "cookies_allow_mc" value = "1" checked = "checked" />
+              <label class = "field-label field-label--checkbox" for = "cookies_allow_mc">
+                <div class = "field-control__styled-wrapper">&ZeroWidthSpace;<div class = "field-control__styled"></div></div>                Marketingové cookies
+              </label>
+            </div>
+            <div class = "cookie-description">
+              Shromažďují informace pro lepší přizpůsobení reklamy vašim zájmům, a to na těchto webových stránkách i mimo ně.
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class = "cookie-bar-actions">
+      <button class = "btn btn-sm btn--cookie-decline js-cookies-decline-all site_cookies_notification_close"><span class="btn__label">Accept necessary</span></button>
+      <button class = "btn btn-sm btn--cookie-settings js-cookies-toggle-settings"><span class="btn__label">Cookie settings</span></button>
+      <button class = "btn btn-sm btn--cookie-confirm js-cookies-confirm site_cookies_notification_close"><span class="btn__label">Povolit vybrané</span></button>
+      <button class = "btn btn-sm btn--cookie-confirm js-cookies-confirm-all site_cookies_notification_close"><span class="btn__label">Accept all</span></button>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+<script type="text/javascript" src="/assets/cs/js/cached.1765548090.3746200156.core.js"></script>
+<script type="text/javascript" src="/assets/cs/js/cached.1756215626.900273133.module.js"></script>
+<script type="text/javascript" src="/assets/cs/js/cached.1774870903.2481372828.app.js"></script>
+<script type="text/javascript" src="/assets/cs/js/cached.app.init.js"></script>
+
+
+<script>window.WEB3FORMS_KEY = ""; /* set at deploy */</script>
+<script src="/js/contact-form-patch.js" defer></script>
+</body>
+</html>

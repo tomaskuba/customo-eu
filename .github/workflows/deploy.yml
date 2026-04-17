@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject Web3Forms access key
+        env:
+          KEY: ${{ secrets.WEB3FORMS_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "WEB3FORMS_KEY secret is empty — contact form will show fallback message."
+          fi
+          find site -name "*.html" -type f -exec sed -i "s|window.WEB3FORMS_KEY = \"\"|window.WEB3FORMS_KEY = \"${KEY}\"|g" {} +
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
