@@ -14,6 +14,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# Až bude nastavená custom doména (www.customo.eu) v GitHub Pages,
+# změň BASE_PATH na prázdný string — URL budou absolutní bez prefixu.
+env:
+  BASE_PATH: customo-eu
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -32,6 +37,59 @@ jobs:
             echo "WEB3FORMS_KEY secret is empty — contact form will show fallback message."
           fi
           find site -name "*.html" -type f -exec sed -i "s|window.WEB3FORMS_KEY = \"\"|window.WEB3FORMS_KEY = \"${KEY}\"|g" {} +
+
+      - name: Prefix absolute paths for project-page hosting
+        if: env.BASE_PATH != ''
+        run: |
+          PREFIX="/${BASE_PATH}"
+          echo "Prefixing asset/page URLs with $PREFIX"
+          # Rewrite absolute root-relative URLs in HTML files.
+          # Matches: href="/...", src="/...", srcset="/... Nw, /... Nw", url(/...).
+          # Skips: //, /customo-eu, protocol-relative, data:, #.
+          find site -name "*.html" -type f -print0 | while IFS= read -r -d '' f; do
+            python3 - "$f" "$PREFIX" <<'PY'
+          import re, sys
+          path, prefix = sys.argv[1], sys.argv[2]
+          with open(path, encoding="utf-8") as fp:
+              html = fp.read()
+
+          def rewrite(m):
+              attr, quote, value = m.group(1), m.group(2), m.group(3)
+              parts = []
+              for chunk in value.split(","):
+                  s = chunk.strip()
+                  if not s:
+                      continue
+                  # split url + descriptor (for srcset)
+                  if " " in s:
+                      url, rest = s.split(" ", 1)
+                      rest = " " + rest
+                  else:
+                      url, rest = s, ""
+                  if url.startswith("/") and not url.startswith("//") and not url.startswith(prefix + "/") and url != prefix:
+                      url = prefix + url
+                  parts.append(url + rest)
+              return f'{attr}={quote}{", ".join(parts)}{quote}'
+
+          # href / src / srcset
+          html = re.sub(r'(href|src|srcset)=(["\'])([^"\']+)\2', rewrite, html)
+          # url(/...) in inline styles
+          def rewrite_url(m):
+              q, v = m.group(1), m.group(2)
+              if v.startswith("/") and not v.startswith("//") and not v.startswith(prefix + "/"):
+                  v = prefix + v
+              return f'url({q}{v}{q})'
+          html = re.sub(r'url\((["\']?)([^)\'"]+)\1\)', rewrite_url, html)
+
+          with open(path, "w", encoding="utf-8") as fp:
+              fp.write(html)
+          PY
+          done
+          echo "Done."
+
+      - name: Remove CNAME for project-page deploy
+        if: env.BASE_PATH != ''
+        run: rm -f site/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
